@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        button:hover{
+            background-color:palegreen;
+            color:lightcoral;
+        }
+        form{
+            border: 2px dashed forestgreen;
+            padding: 20px;
+            margin: 20px;
+            width: 50%;
+            color: purple;
+            font-family: cursive;
+            font-weight: bold;
+            font-style: oblique;
+            font-display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Event Registration Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <br>
+        <br>
+        <label for="email">Email ID:</label>
+        <input type="email" id="email">
+        <br>
+        <br>
+        <label for="phone">Phone No.</label>
+        <input type="tel" id="phone">
+        <br>
+        <br>
+        <label for="date">Date Of Birth:</label>
+        <input type="date" id="date">
+        <br>
+        <br>
+        <label for="occupation">Occupation:</label>
+        <select name="occupation" id="occupation">
+            <option value="not selected">--select--</option>
+            <option value="Student">Student</option>
+            <option value="Working">Working</option>
+            <option value="Retired">Retired</option>
+            <option value="Unemployed">Unemployed</option>
+        </select>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Topics of Interest</legend>
+            <label for="HTML">HTML</label>
+            <input type="checkbox" id="HTML">
+            <br>
+            <br>
+            <label for="CSS">CSS</label>
+            <input type="checkbox" id="CSS">
+            <br>
+            <br>
+            <label for="JS">JavaScript</label>
+            <input type="checkbox" id="JS">
+            <br>
+            <br>
+            <label for="PHP">PHP</label>
+            <input type="checkbox" id="PHP">
+            <br>
+            <br>
+            <label for="SQL">SQL</label>
+            <input type="checkbox" id="SQL">
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <br>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
